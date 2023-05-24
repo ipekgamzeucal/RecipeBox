@@ -57,7 +57,7 @@ def get_names_top5(dataframe, similar_top5):
     return recommended_recipes
 
 
-base_url='/Users/ipekgamzeucal/Desktop/Data_Science/Miuul-DSMLBC11/RecipeBox'
+base_url=''
 # seg1_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl','rb'))
 # seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
 # seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
