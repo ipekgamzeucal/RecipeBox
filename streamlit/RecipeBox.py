@@ -21,7 +21,7 @@ from PIL import Image
 
 def main():
     #image = Image.open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/streamlit/assets/simgemiz.png')
-    #image = Image.open('../assets/simgemiz.png')
+    image = Image.open('../assets/simgemiz.png')
     st.image(image, caption='', use_column_width=False)
     st.markdown(
         """
