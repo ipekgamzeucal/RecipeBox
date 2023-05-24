@@ -16,11 +16,12 @@ import matplotlib.pyplot as plt
 warnings.filterwarnings('ignore')
 import streamlit as st
 from PIL import Image
-
+from io import BytesIO
 
 
 def main():
-    image = Image.open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/assets/simgemiz.png')
+    response = requests.get('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/assets/simgemiz.png')
+    image = Image.open(BytesIO(response.content))
     st.image(image, caption='', use_column_width=False)
     st.markdown(
         """
