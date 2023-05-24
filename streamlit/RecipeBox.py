@@ -107,7 +107,7 @@ final_recipes_all.head()
 
 
 def main():
-    st.sidebar.title("Sayfa Seçin")
+    st.sidebar.title("RecipeBox")
     # page = st.sidebar.radio('Pages', tabs)
     page = st.sidebar.radio("",
                              ("Home Page", "İtem Based","Forecasting"))
