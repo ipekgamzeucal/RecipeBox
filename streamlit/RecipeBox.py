@@ -18,7 +18,7 @@ import streamlit as st
 from PIL import Image
 
 
-base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/'
+
 def main():
     image = Image.open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/streamlit/assets/simgemiz.png')
     st.image(image, caption='', use_column_width=False)
@@ -50,7 +50,7 @@ def main():
         }
         .css-18ni7ap{
 
-            background-image: url('C:/Users/furka/PycharmProjects/pythonProject2/PROJE\RecipeBox/assets/simgemiz.png');
+            background-image: url('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/streamlit/assets/simgemiz.png');
             
             background-size: cover;
         }
@@ -113,7 +113,7 @@ def get_names_top5(dataframe, similar_top5):
         return recommended_recipes
 
 
-
+base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/'
 seg1_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl','rb'))
 seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
 seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
