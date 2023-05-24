@@ -17,9 +17,9 @@ warnings.filterwarnings('ignore')
 import streamlit as st
 from PIL import Image
 
-
+base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/'
 def main():
-    image = Image.open('C:/Users/furka/PycharmProjects/pythonProject2/PROJE\RecipeBox/assets/simgemiz.png')
+    image = Image.open(f'{base_url}streamlit/assets/simgemiz.png')
     st.image(image, caption='', use_column_width=False)
     st.markdown(
         """
@@ -112,7 +112,7 @@ def get_names_top5(dataframe, similar_top5):
         return recommended_recipes
 
 
-base_url='C:/Users/furka/PycharmProjects/pythonProject2/PROJE/RecipeBox'
+
 seg1_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl','rb'))
 seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
 seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
