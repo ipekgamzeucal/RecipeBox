@@ -121,13 +121,13 @@ def get_names_top5(dataframe, similar_top5):
 
 base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main'
 seg1_vectorizer = pd.read_pickle(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl')
-seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
-seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
-seg2_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg2_tfidf_matrix.pkl','rb'))
-seg3_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg3_vectorizer.pkl','rb'))
-seg3_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg3_tfidf_matrix.pkl','rb'))
-seg4_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg4_vectorizer.pkl','rb'))
-seg4_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg4_tfidf_matrix.pkl','rb'))
+seg1_tfidf_matrix = pd.read_pickle(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl')
+seg2_vectorizer = pd.read_pickle(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl')
+seg2_tfidf_matrix = pd.read_pickle(f'{base_url}/content_based_pickles/seg2_tfidf_matrix.pkl')
+seg3_vectorizer = pd.read_pickle(f'{base_url}/content_based_pickles/seg3_vectorizer.pkl')
+seg3_tfidf_matrix = pd.read_pickle(f'{base_url}/content_based_pickles/seg3_tfidf_matrix.pkl')
+seg4_vectorizer = pd.read_pickle(f'{base_url}/content_based_pickles/seg4_vectorizer.pkl')
+seg4_tfidf_matrix = pd.read_pickle(f'{base_url}/content_based_pickles/seg4_tfidf_matrix.pkl')
 
 filtered_recipes=pd.read_csv(f'{base_url}/final_datasets/final_repices_all.csv')
 seg1=filtered_recipes[(filtered_recipes.minutes<=40)&(filtered_recipes.calories<=400)]
