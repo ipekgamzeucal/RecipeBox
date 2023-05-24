@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 import streamlit as st
 from PIL import Image
 from io import BytesIO
-
+import requests
 
 def main():
     response = requests.get('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/assets/simgemiz.png')
