@@ -1,5 +1,6 @@
 numpy==1.24.2
 plotly==5.14.1
+seaborn @ file:///tmp/build/80754af9/seaborn_1600553570093/work
 scikit-learn==1.2.2
 streamlit==1.22.0
 streamlit-camera-input-live==0.2.0
@@ -12,3 +13,11 @@ streamlit-keyup==0.2.0
 streamlit-toggle-switch==1.0.2
 streamlit-vertical-slider==1.0.2
 surprise==0.1
+alabaster==0.7.12
+astor==0.8.1
+astroid @ file:///opt/concourse/worker/volumes/live/21fd14a9-2a7e-484b-7394-5a9912cdcf80/volume/astroid_1592498459180/work
+astropy==4.0.2
+astunparse==1.6.3
+pickleshare @ file:///opt/concourse/worker/volumes/live/93ec39d8-05bb-4f84-7efc-98735bc39b70/volume/pickleshare_1594384101884/work
+google-pasta==0.2.0
+matplotlib==3.7.1
