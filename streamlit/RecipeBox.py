@@ -20,8 +20,7 @@ from PIL import Image
 
 
 def main():
-    #image = Image.open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/streamlit/assets/simgemiz.png')
-    image = Image.open('https://github.com/ipekgamzeucal/RecipeBox/blob/main/streamlit/assets/simgemiz.png?raw=true')
+    image = Image.open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/assets/simgemiz.png')
     st.image(image, caption='', use_column_width=False)
     st.markdown(
         """
@@ -48,12 +47,6 @@ def main():
         }
         .css-1kyxreq{
             JUSTIFY-CONTENT: center !IMPORTANT;
-        }
-        .css-18ni7ap{
-
-            background-image: url('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/streamlit/assets/simgemiz.png');
-            
-            background-size: cover;
         }
         .css-vk3wp9{
         background-color: rgb(226 157 157) !Important;
@@ -112,6 +105,7 @@ def get_names_top5(dataframe, similar_top5):
         # Get the names of top 5 recommended recipes
         recommended_recipes = list(dataframe.iloc[similar_top5].index)
         return recommended_recipes
+
 
 
 base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/'
