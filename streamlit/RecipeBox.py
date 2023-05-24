@@ -120,7 +120,7 @@ def get_names_top5(dataframe, similar_top5):
 #seg4_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg4_tfidf_matrix.pkl','rb'))
 
 base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main'
-seg1_vectorizer = pickle.load(open('https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/content_based_pickles/seg1_vectorizer.pkl','rb'))
+seg1_vectorizer = pd.read_pickle(r'https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/content_based_pickles/seg1_vectorizer.pkl')
 seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
 seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
 seg2_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg2_tfidf_matrix.pkl','rb'))
