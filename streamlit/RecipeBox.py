@@ -67,7 +67,7 @@ base_url=''
 # seg4_vectorizer = pickle.load(open(f'content_based_pickles/seg4_vectorizer.pkl','rb'))
 # seg4_tfidf_matrix = pickle.load(open(f'content_based_pickles/seg4_tfidf_matrix.pkl','rb'))
 
-filtered_recipes=pd.read_csv(f'{base_url}/final_datasets/final_repices_all.csv')
+filtered_recipes=pd.read_csv(f'../final_datasets/final_repices_all.csv')
 seg1=filtered_recipes[(filtered_recipes.minutes<=40)&(filtered_recipes.calories<=400)]
 seg2=filtered_recipes[(filtered_recipes.minutes<=40)&(filtered_recipes.calories>400)]
 seg3=filtered_recipes[(filtered_recipes.minutes>40)&(filtered_recipes.calories<=400)]
@@ -90,26 +90,26 @@ st.set_page_config(page_title='RecipeBox')
 # st.sidebar.write('Date: {}'.format(current_time))
 
 #Tekil malzeme listesinin okunmasi
-df_final_ingredients=pd.read_csv(f'final_datasets/final_ingredients.csv')
+df_final_ingredients=pd.read_csv(f'../final_datasets/final_ingredients.csv')
 list_final_ingredients=list(df_final_ingredients.INGREDIENT)
 ingr_list_for_user = ["Select and add an ingredient"] + list_final_ingredients[:]
 
 #Tekil tag listesinin okunmasi
-df_final_tags=pd.read_csv(f'final_datasets/final_tags.csv')
+df_final_tags=pd.read_csv(f'../final_datasets/final_tags.csv')
 list_final_tags=list(df_final_tags.tag)
 tag_list_for_user = ["Select and add a relevant tag"] + list_final_tags[:]
 
 #Tarif ID-Name listesinin okunmasi
-final_recipes=pd.read_csv(f'final_datasets/final_repices.csv')
+final_recipes=pd.read_csv(f'../final_datasets/final_repices.csv')
 final_recipes_name_indexed=final_recipes.set_index('name')
 
 ## ITEM_BASED listesinin okunması
 
-item_based_recom = pd.read_csv(f'ItembasedRecommender/item_based_updated.csv')
+item_based_recom = pd.read_csv(f'../ItembasedRecommender/item_based_updated.csv')
 
 # Sayfa düzenini tanımlayın
 
-final_recipes_all = pd.read_csv(f'final_datasets/final_repices_all.csv')
+final_recipes_all = pd.read_csv(f'../final_datasets/final_repices_all.csv')
 final_recipes_all.head()
 
 
