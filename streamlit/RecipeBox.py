@@ -109,15 +109,6 @@ def get_names_top5(dataframe, similar_top5):
 
 
 
-#base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main'
-#seg1_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl','rb'))
-#seg1_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg1_tfidf_matrix.pkl','rb'))
-#seg2_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg2_vectorizer.pkl','rb'))
-#seg2_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg2_tfidf_matrix.pkl','rb'))
-#seg3_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg3_vectorizer.pkl','rb'))
-#seg3_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg3_tfidf_matrix.pkl','rb'))
-#seg4_vectorizer = pickle.load(open(f'{base_url}/content_based_pickles/seg4_vectorizer.pkl','rb'))
-#seg4_tfidf_matrix = pickle.load(open(f'{base_url}/content_based_pickles/seg4_tfidf_matrix.pkl','rb'))
 
 base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main'
 seg1_vectorizer = pd.read_pickle(f'{base_url}/content_based_pickles/seg1_vectorizer.pkl')
