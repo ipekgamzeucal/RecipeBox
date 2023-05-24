@@ -150,10 +150,6 @@ def main():
 
         user_input=ing_list+tag_list
 
-        # st.markdown("<h5 style='text-align:center;'>You selected</h3>", unsafe_allow_html=True)
-        # st.write(selected_time+' & '+selected_cal)
-        # Secılen malzeme ve taglerın brlestırılmesı ve ekranda gosterılmesı
-        # st.write('User Input:', user_input)
 
         user_model_input = user_input
 
@@ -162,7 +158,7 @@ def main():
         if user_input==[]:
 
             st.markdown("<h5 style='text-align:center;'>You havent selected!</h3>", unsafe_allow_html=True)
-            # st.write('You havent selected!')
+     
 
         else:
             st.markdown("<h5 style='text-align:center;'>You selected</h3>", unsafe_allow_html=True)
