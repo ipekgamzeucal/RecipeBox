@@ -17,7 +17,8 @@ warnings.filterwarnings('ignore')
 import streamlit as st
 from PIL import Image
 
-base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox'
+
+base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox/main/'
 def main():
     image = Image.open(f'{base_url}/streamlit/assets/simgemiz.png')
     st.image(image, caption='', use_column_width=False)
