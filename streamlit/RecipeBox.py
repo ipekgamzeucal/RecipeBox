@@ -19,8 +19,8 @@ from PIL import Image
 
 base_url='https://raw.githubusercontent.com/ipekgamzeucal/RecipeBox'
 def main():
-    image = Image.open(f'{base_url}/streamlit/assets/simgemiz.png')
-    st.image(image, caption='', use_column_width=False)
+    #image = Image.open(f'{base_url}/streamlit/assets/simgemiz.png')
+    #st.image(image, caption='', use_column_width=False)
     st.markdown(
         """
         <style>
