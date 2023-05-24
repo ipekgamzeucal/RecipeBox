@@ -41,7 +41,7 @@ def main():
         color : white;
         }
         .css-1vbkxwb p{
-        color: rgb(255, 75, 75) !Important;
+        color: rgb(0, 0, 0) !Important;
         }
         .css-1y4p8pa{
             padding: 3rem 1rem 10rem !Important;
@@ -50,7 +50,7 @@ def main():
             JUSTIFY-CONTENT: center !IMPORTANT;
         }
         .css-vk3wp9{
-        background-color: rgb(226 157 157) !Important;
+        background-color: rgb(0 0 0) !Important;
         }
         
         .css-fblp2m{
