@@ -18,4 +18,3 @@ astropy==4.0.2
 astor==0.8.1
 astunparse==1.6.3
 google-pasta==0.2.0
-PIL==8.0.1
