@@ -14,7 +14,6 @@ streamlit-toggle-switch==1.0.2
 streamlit-vertical-slider==1.0.2
 matplotlib==3.7.1
 alabaster==0.7.12
-astropy==4.0.2
 astor==0.8.1
 astunparse==1.6.3
 google-pasta==0.2.0
