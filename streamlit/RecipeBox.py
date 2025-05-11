@@ -171,9 +171,9 @@ def home_page():
     st.sidebar.write("")
     st.sidebar.write("")
     st.sidebar.info(' İpek Gamze UÇAL ', icon="🐨")
-    st.sidebar.info(' Işın KOÇER', icon="🐼")
-    st.sidebar.info(' Büşra ŞENTÜRK ', icon="🐈")
-    st.sidebar.info(' Şeyma NURDAĞ ', icon="🌼")
+    #st.sidebar.info(' Işın KOÇER', icon="🐼")
+    #st.sidebar.info(' Büşra ŞENTÜRK ', icon="🐈")
+    #st.sidebar.info(' Şeyma NURDAĞ ', icon="🌼")
 
     if page == 'Add Your Ingredients':
         # page1()
