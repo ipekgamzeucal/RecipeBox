@@ -1,4 +1,3 @@
-pip install --upgrade pip
 import pickle
 import ast
 import streamlit_extras
